@@ -1,0 +1,31 @@
+.tooltip::before {
+    visibility: hidden;
+    content: attr(tooltip);
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    background: black;
+    padding: 6px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+}
+
+.tooltip::after {
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+    visibility: visible;
+}

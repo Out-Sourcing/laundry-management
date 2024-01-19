@@ -1,0 +1,71 @@
+/* input */
+
+input,
+textarea {
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 42px;
+}
+
+.input {
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-dark);
+    outline: none;
+    outline-width: 0;
+    outline-style: none;
+    background: var(--secondary);
+}
+
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"] {
+    line-height: 18px;
+}
+
+input[type="checkbox"] {
+    transform: translateY(1px);
+}
+
+.input:hover {
+    border: 1px solid var(--dark);
+}
+
+.input:focus {
+    border: 1px solid var(--dark);
+}
+
+.no-resize {
+    resize: none;
+}
+
+.resize-h {
+    max-width: 100%;
+    resize: horizontal;
+}
+
+.resize-v {
+    resize: vertical;
+}
+
+/* end input */
+
+
+/* checkbox */
+
+.checkbox,
+.radio {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* end checkbox */

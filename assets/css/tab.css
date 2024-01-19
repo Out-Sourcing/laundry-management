@@ -1,0 +1,34 @@
+.tab-container {
+    padding: 0 4px;
+    display: block;
+    position: relative;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.tab-container .active {
+    background: var(--white);
+    box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+    color: var(--primary);
+}
+
+.tab-item {
+    display: inline-block;
+    padding: 6px 24px;
+    background: var(--secondary-dark);
+    border-right: 1px solid var(--white);
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.tab-item:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.tab-item:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: none;
+}

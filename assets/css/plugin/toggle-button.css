@@ -1,0 +1,51 @@
+.toggle-slider .switch {
+    width: 50px !important;
+    height: 24px !important;
+}
+
+input:checked+.track>.handle {
+    margin-left: -13px;
+}
+
+.toggle-slider {
+    height: 24px;
+}
+
+.toggle-slider .track {
+    border: none !important;
+    outline: none !important;
+    background: var(--secondary) !important;
+}
+
+.toggle-slider .track .handle {
+    background: var(--white) !important;
+    width: 21px;
+    height: 21px;
+    margin-left: 2px;
+}
+
+input:checked+.track {
+    background: var(--primary) !important;
+    border: none !important;
+    outline: none !important;
+}
+
+input:checked+.track::before {
+    content: "off";
+    font-size: 10px;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-16px, -50%);
+}
+
+.toggle-slider .track::before {
+    content: "on";
+    font-size: 10px;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(16px, -50%);
+}

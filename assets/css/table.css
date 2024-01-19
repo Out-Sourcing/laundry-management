@@ -1,0 +1,76 @@
+.table-control {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: none;
+}
+
+.table tr th {
+    padding: 10px;
+    font-size: 14px;
+    background: var(--primary-light);
+    color: var(--primary);
+    white-space: nowrap;
+}
+
+.table tr th:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.table tr th:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.table tr td {
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #f2f2f2;
+    white-space: nowrap;
+}
+
+.table .hover-list:hover td {
+    background: var(--secondary-light);
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px
+}
+
+.pagination span {
+    color: black;
+    float: left;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 3px;
+    margin: 0 4px;
+    font-size: 13px;
+}
+
+.pagination span.active {
+    background-color: var(--info);
+    color: white;
+    border: 1px solid var(--info);
+}
+
+.pagination span:hover:not(.active) {
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+    .table tr th {
+        font-size: 13px;
+    }
+}
